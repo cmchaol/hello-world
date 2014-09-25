@@ -1,14 +1,14 @@
 to clone this repository
 
 
-open a terminal and go to the desire directory 
+open a terminal
+
+go to the desire directory 
+
+enter the following line
 
 git clone https://github.com/cmchaol/hello-world.git
 
-| a table |      |
-|         | here |
-|---------+------|
-|         |      |
 
 hello-world
 ===========
