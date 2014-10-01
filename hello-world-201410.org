@@ -31,19 +31,29 @@
 
 *** edit the local repository, git add, git commit
 
-| step |                             |
-|------+-----------------------------|
-|    1 | move inside the repository  |
-|      |                             |
-|    2 | edit the-specific-file      |
-|      |                             |
-|    3 | git add the-specific-file   |
-|      |                             |
-|    4 | commit the snapshot         |
-|      | enter the following command |
-|      | git commit -m "<message>"   |
-|      |                             |
+| step |                                  |
+|------+----------------------------------|
+|    1 | move inside the local repository |
+|      |                                  |
+|    2 | edit the-specific-file           |
+|      |                                  |
+|    3 | git add the-specific-file        |
+|      |                                  |
+|    4 | commit the snapshot              |
+|      | enter the following command      |
+|      | git commit -m "<message>"        |
+|      |                                  |
 
 git add
 
 https://www.atlassian.com/git/tutorials/saving-changes/git-add
+
+
+*** git push the local snapshot to the remote github repository
+
+| step |                                  |
+|------+----------------------------------|
+|    1 | move inside the local repository |
+|      |                                  |
+|    2 | git push                         |
+
