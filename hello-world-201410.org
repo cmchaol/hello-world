@@ -17,43 +17,27 @@
 
 *** git clone THIS repository
 
-| step |                                                      |
-|------+------------------------------------------------------|
-|    1 | open a terminal                                      |
-|      |                                                      |
-|    2 | point inside the terminal                            |
-|      | move to the desire directory                         |
-|      |                                                      |
-|    3 | enter the following command                          |
-|      | git clone https://github.com/cmchaol/hello-world.git |
-|      |                                                      |
-|    4 | move inside the local repository                     |
-|      | cd hello-world                                       |
-|      |                                                      |
-|    5 | start to edit                                        |
-
-
-|   | step                         | the command                                          |
-|---+------------------------------+------------------------------------------------------|
-| 1 | open a terminal              |                                                      |
-|   |                              |                                                      |
-| 2 | point inside the terminal    |                                                      |
-|   | move to the desire directory |                                                      |
-|   |                              |                                                      |
-| 3 | clone the respostory         | git clone https://github.com/cmchaol/hello-world.git |
+| step |                              | the command                                          |
+|------+------------------------------+------------------------------------------------------|
+|    1 | open a terminal              |                                                      |
+|      |                              |                                                      |
+|    2 | point inside the terminal    |                                                      |
+|      | move to the desire directory |                                                      |
+|      |                              |                                                      |
+|    3 | clone the respostory         | git clone https://github.com/cmchaol/hello-world.git |
 
 
 *** edit the local repository, git add, git commit
 
-|   | step                             | the command               |
-|---+----------------------------------+---------------------------|
-| 1 | move inside the local repository | cd hello-world            |
-|   |                                  |                           |
-| 2 | edit the-specific-file           |                           |
-|   |                                  |                           |
-| 3 | git add the-specific-file        |                           |
-|   |                                  |                           |
-| 4 | commit the snapshot              | git commit -m "<message>" |
+| step |                                  | the command               |
+|------+----------------------------------+---------------------------|
+|    1 | move inside the local repository | cd hello-world            |
+|      |                                  |                           |
+|    2 | edit the-specific-file           |                           |
+|      |                                  |                           |
+|    3 | git add the-specific-file        | git add the-specific-file |
+|      |                                  |                           |
+|    4 | commit the snapshot              | git commit -m "<message>" |
 
 
 git add
