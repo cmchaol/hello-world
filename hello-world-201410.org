@@ -74,11 +74,13 @@ https://www.atlassian.com/git/tutorials/syncing/git-push
 | git push          |
 
 #+BEGIN_EXAMPLE
+
 git add hello-world-201410.org
 
 git commit -m "<another modification of hello-world-201410.org>"
 
 git push
+
 #+END_EXAMPLE
 
 
