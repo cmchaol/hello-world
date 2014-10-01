@@ -16,7 +16,7 @@
 
 *** download THIS repository, by git
 
-| step | download                     | the command                                          |
+| step |                              | the command                                          |
 |------+------------------------------+------------------------------------------------------|
 |    1 | open a terminal              |                                                      |
 |      |                              |                                                      |
@@ -28,7 +28,7 @@
 
 *** edit the local repository, git add, git commit
 
-| step | edit                             | the command               |
+| step |                                  | the command               |
 |------+----------------------------------+---------------------------|
 |    1 | move inside the local repository | cd hello-world            |
 |      |                                  |                           |
@@ -52,11 +52,11 @@ https://www.atlassian.com/git/tutorials/saving-changes/git-commit
 
 *** upload the local snapshot to the remote github repository
 
-|   | step                             |
-|---+----------------------------------|
-| 1 | move inside the local repository |
-|   |                                  |
-| 2 | git push                         |
+|   | step                        |
+|---+-----------------------------|
+| 1 | inside the local repository |
+|   |                             |
+| 2 | git push                    |
 
 git push 
 
