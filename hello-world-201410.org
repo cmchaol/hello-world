@@ -33,6 +33,21 @@
 |    5 | start to edit                                        |
 
 
+| step |                                  | the command                                          |
+|      |                                  |                                                      |
+|------+----------------------------------+------------------------------------------------------|
+|    1 | open a terminal                  |                                                      |
+|      |                                  |                                                      |
+|    2 | get inside the terminal          |                                                      |
+|      | move to the desire directory     |                                                      |
+|      |                                  |                                                      |
+|    3 | enter the  command               | git clone https://github.com/cmchaol/hello-world.git |
+|      |                                  |                                                      |
+|    4 | move inside the local repository | cd hello-world                                       |
+|      |                                  |                                                      |
+|    5 | start to edit                    |                                                      |
+
+
 *** edit the local repository, git add, git commit
 
 | step |                                  |
