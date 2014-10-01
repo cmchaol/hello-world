@@ -14,16 +14,6 @@
 |               |                 |
 | upload        | git push        |
 
-| A practicle cycle |
-|-------------------|
-| git clone         |
-| edit              |
-| git add           |
-| git commit        |
-| git push          |
-|                   |
-
-
 *** download THIS repository
 
 | step |                              | the command                                          |
@@ -54,7 +44,7 @@ git add
 https://www.atlassian.com/git/tutorials/saving-changes/git-add
 
 
-git commit
+git commit 
 
 https://www.atlassian.com/git/tutorials/saving-changes/git-commit
 
@@ -71,6 +61,26 @@ https://www.atlassian.com/git/tutorials/saving-changes/git-commit
 git push 
 
 https://www.atlassian.com/git/tutorials/syncing/git-push
+
+
+*** a typical script
+
+| A practicle cycle |
+|-------------------|
+| git clone         |
+| edit              |
+| git add           |
+| git commit        |
+| git push          |
+
+#+BEGIN_EXAMPLE
+git add hello-world-201410.org
+
+git commit -m "<another modification of hello-world-201410.org>"
+
+git push
+#+END_EXAMPLE
+
 
 
 ** Caching your GitHub password in Git
@@ -178,7 +188,7 @@ dev-lang/R
 ** ESS
 
  emerge -s %^ess$
-Searching...    
+
 [ Results for search key : ^ess$ ]
 [ Applications found : 2 ]
 
@@ -197,3 +207,4 @@ Searching...
       Homepage:      http://xemacs.org/
       Description:   ESS: Emacs Speaks Statistics
       License:       GPL-2
+
