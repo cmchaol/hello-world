@@ -1,0 +1,18 @@
+* my git experience
+** git clone, edit, push
+*** git clone this respository
+
+| step |                                                      |
+|------+------------------------------------------------------|
+|    1 | open a terminal                                      |
+|      |                                                      |
+|    2 | move to the desire directory                         |
+|      |                                                      |
+|    3 | enter the following command                          |
+|      | git clone https://github.com/cmchaol/hello-world.git |
+|      |                                                      |
+|    4 | move inside the local repository                     |
+|      | cd hello-world                                       |
+|      |                                                      |
+|    5 | start to edit                                        |
+|      |                                                      |
