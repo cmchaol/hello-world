@@ -1,15 +1,19 @@
 * my git experience
-** git clone, edit, push
+** repository clone, edit, push, by git
 
-| git   | the command |
-|-------+-------------|
-| clone | git clone   |
-|       |             |
-| edit  | git add     |
-|       | git commit  |
-|       |             |
-| push  | git push    |
-|       |             |
+*** summary
+
+
+| the repsitory | the git command |
+|---------------+-----------------|
+| clone         | git clone       |
+|               |                 |
+| edit          | git add         |
+|               | git commit      |
+|               |                 |
+| push          | git push        |
+|               |                 |
+
 
 *** git clone this repository
 
@@ -17,7 +21,8 @@
 |------+------------------------------------------------------|
 |    1 | open a terminal                                      |
 |      |                                                      |
-|    2 | move to the desire directory                         |
+|    2 | inside the terminal                                  |
+|      | move to the desire directory                         |
 |      |                                                      |
 |    3 | enter the following command                          |
 |      | git clone https://github.com/cmchaol/hello-world.git |
@@ -26,7 +31,6 @@
 |      | cd hello-world                                       |
 |      |                                                      |
 |    5 | start to edit                                        |
-|      |                                                      |
 
 
 *** edit the local repository, git add, git commit
@@ -49,6 +53,12 @@ git add
 https://www.atlassian.com/git/tutorials/saving-changes/git-add
 
 
+git commit
+
+https://www.atlassian.com/git/tutorials/saving-changes/git-commit
+
+
+
 *** git push the local snapshot to the remote github repository
 
 | step |                                  |
@@ -56,4 +66,8 @@ https://www.atlassian.com/git/tutorials/saving-changes/git-add
 |    1 | move inside the local repository |
 |      |                                  |
 |    2 | git push                         |
+
+git push 
+
+https://www.atlassian.com/git/tutorials/syncing/git-push
 
