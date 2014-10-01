@@ -62,3 +62,38 @@ git push
 
 https://www.atlassian.com/git/tutorials/syncing/git-push
 
+
+* org mode
+
+** synonym
+
+|          | reference |
+|----------+-----------|
+| orgmode  |         1 |
+|          |           |
+| org mode |         1 |
+|          |           |
+| org-mode |         3 |
+|          |           |
+| org      |         2 |
+|          |           |
+|          |           |
+
+
+reference
+
+1
+
+http://orgmode.org/
+
+
+2
+
+http://orgmode.org/manual/Summary.html#Summary
+
+
+3
+
+http://en.wikipedia.org/wiki/Org-mode
+
+
