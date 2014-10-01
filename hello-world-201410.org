@@ -67,13 +67,13 @@ https://www.atlassian.com/git/tutorials/syncing/git-push
 
 https://help.github.com/articles/caching-your-github-password-in-git
 
-git config credential.helper cache
+#+BEGIN_EXAMPLE
+git config          credential.helper  cache
 
-git config --global credential.helper cache
-
-git config '--'global credential.helper cache
+git config --global credential.helper  cache
 
 git config --global credential.helper 'cache --timeout=3600'
+#+END_EXAMPLE
 
 
 
