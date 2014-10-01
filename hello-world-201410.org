@@ -21,7 +21,7 @@
 |------+------------------------------------------------------|
 |    1 | open a terminal                                      |
 |      |                                                      |
-|    2 | inside the terminal                                  |
+|    2 | point inside the terminal                            |
 |      | move to the desire directory                         |
 |      |                                                      |
 |    3 | enter the following command                          |
@@ -33,14 +33,14 @@
 |    5 | start to edit                                        |
 
 
-|   | step                             | the command                                          |
-|---+----------------------------------+------------------------------------------------------|
-| 1 | open a terminal                  |                                                      |
-|   |                                  |                                                      |
-| 2 | get inside the terminal          |                                                      |
-|   | move to the desire directory     |                                                      |
-|   |                                  |                                                      |
-| 3 | clone the respostory             | git clone https://github.com/cmchaol/hello-world.git |
+|   | step                         | the command                                          |
+|---+------------------------------+------------------------------------------------------|
+| 1 | open a terminal              |                                                      |
+|   |                              |                                                      |
+| 2 | point inside the terminal    |                                                      |
+|   | move to the desire directory |                                                      |
+|   |                              |                                                      |
+| 3 | clone the respostory         | git clone https://github.com/cmchaol/hello-world.git |
 
 
 *** edit the local repository, git add, git commit
@@ -69,11 +69,11 @@ https://www.atlassian.com/git/tutorials/saving-changes/git-commit
 
 *** git push the local snapshot to the remote github repository
 
-|   | step                             | the command |
-|---+----------------------------------+-------------|
-| 1 | move inside the local repository |             |
-|   |                                  |             |
-| 2 | git push                         |             |
+|   | step                             |
+|---+----------------------------------|
+| 1 | move inside the local repository |
+|   |                                  |
+| 2 | git push                         |
 
 git push 
 
