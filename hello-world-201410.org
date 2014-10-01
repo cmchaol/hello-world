@@ -1,3 +1,5 @@
+#+OPTIONS: toc:2          
+
 * my git experience
 
 ** repository download, edit, upload, by git
@@ -136,6 +138,7 @@ http://en.wikipedia.org/wiki/Org-mode
 ** org export backends
 
 c-h v org-export-backends
+
 
 ** org export Literal examples
 
