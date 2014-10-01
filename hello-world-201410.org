@@ -1,35 +1,34 @@
 * my git experience
-** repository clone, edit, push, by git
+** repository download, edit, upload, by git
+
 
 *** summary
 
-
 | the repsitory | the git command |
 |---------------+-----------------|
-| clone         | git clone       |
+| download      | git clone       |
 |               |                 |
 | edit          | git add         |
 |               | git commit      |
 |               |                 |
-| push          | git push        |
-|               |                 |
+| upload        | git push        |
 
 
-*** git clone THIS repository
+*** download THIS repository, by git
 
-| step |                              | the command                                          |
+| step | download                     | the command                                          |
 |------+------------------------------+------------------------------------------------------|
 |    1 | open a terminal              |                                                      |
 |      |                              |                                                      |
 |    2 | point inside the terminal    |                                                      |
 |      | move to the desire directory |                                                      |
 |      |                              |                                                      |
-|    3 | clone the respostory         | git clone https://github.com/cmchaol/hello-world.git |
+|    3 | download the respostory      | git clone https://github.com/cmchaol/hello-world.git |
 
 
 *** edit the local repository, git add, git commit
 
-| step |                                  | the command               |
+| step | edit                             | the command               |
 |------+----------------------------------+---------------------------|
 |    1 | move inside the local repository | cd hello-world            |
 |      |                                  |                           |
@@ -51,7 +50,7 @@ https://www.atlassian.com/git/tutorials/saving-changes/git-commit
 
 
 
-*** git push the local snapshot to the remote github repository
+*** upload the local snapshot to the remote github repository
 
 |   | step                             |
 |---+----------------------------------|
