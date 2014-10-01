@@ -115,3 +115,15 @@ http://en.wikipedia.org/wiki/Org-mode
 
 c-h v org-export-backends
 
+** org export Literal examples
+
+http://orgmode.org/manual/Literal-examples.html#Literal-examples
+
+#+BEGIN_EXAMPLE
+     Some example from a text file.
+#+END_EXAMPLE
+
+For simplicity when using small examples, you can also start the example lines with a colon followed by a space. There may also be additional whitespace before the colon:
+
+     Here is an example
+        : Some example from a text file.
