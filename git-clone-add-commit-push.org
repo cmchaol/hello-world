@@ -1,0 +1,59 @@
+* summary
+
+| the repsitory | the git command |
+|---------------+-----------------|
+| download      | git clone       |
+|               |                 |
+| edit          | git add         |
+|               | git commit      |
+|               |                 |
+| upload        | git push        |
+
+
+* download THIS repository
+
+| step |                              | the command                                          |
+|------+------------------------------+------------------------------------------------------|
+|    1 | open a terminal              |                                                      |
+|      |                              |                                                      |
+|    2 | point inside the terminal    |                                                      |
+|      | move to the desire directory |                                                      |
+|      |                              |                                                      |
+|    3 | download the respostory      | git clone [[https://github.com/cmchaol/hello-world.git]] |
+
+
+* edit the local repository, git add, git commit
+
+| step |                                  | the command               |
+|------+----------------------------------+---------------------------|
+|    1 | move inside the local repository | cd hello-world            |
+|      |                                  |                           |
+|    2 | edit the-specific-file           |                           |
+|      |                                  |                           |
+|    3 | git add the-specific-file        | git add the-specific-file |
+|      |                                  |                           |
+|    4 | commit the snapshot              | git commit -m "<message>" |
+
+
+git add
+
+[[https://www.atlassian.com/git/tutorials/saving-changes/git-add]]
+
+
+git commit
+
+[[https://www.atlassian.com/git/tutorials/saving-changes/git-commit]]
+
+
+
+* upload the local snapshot to the remote github repository
+
+| step |                             |
+|------+-----------------------------|
+|    1 | inside the local repository |
+|      |                             |
+|    2 | git push                    |
+
+git push 
+
+[[https://www.atlassian.com/git/tutorials/syncing/git-push]]
