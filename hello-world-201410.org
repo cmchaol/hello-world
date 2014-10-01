@@ -1,4 +1,5 @@
 * my git experience
+
 ** repository download, edit, upload, by git
 
 
@@ -12,6 +13,15 @@
 |               | git commit      |
 |               |                 |
 | upload        | git push        |
+
+| A practicle cycle |
+|-------------------|
+| git clone         |
+| edit              |
+| git add           |
+| git commit        |
+| git push          |
+|                   |
 
 
 *** download THIS repository
@@ -133,3 +143,57 @@ For simplicity when using small examples, you can also start the example lines w
 #+END_EXAMPLE
 
 
+
+* R
+
+** installation in gentoo
+
+emerge -s %^R$ 
+
+These days, if you want a regex search, you have to prepend a "%" and the regex search is case sensitive. 
+
+http://forums.gentoo.org/viewtopic-t-129047.html
+
+man emerge
+
+--search (-s)
+              Searches  for  matches of the supplied string in the portage tree.  By default emerge uses a case-insensitive simple search, but you can enable a regular expression search by prefixing the search string with %.  For example, emerge --search "%^kde" searches for any package whose name starts with "kde"; emerge --search "%gcc$" searches for any package that ends with "gcc"; emerge --search "office" searches for any package that contains the word "office".  If you want to include the category into the search string, prepend an @: emerge --search "%@^dev-java.*jdk". If you  want  to  search the package descriptions as well, use the --searchdesc action.
+
+
+
+ emerge -s %^R$ 
+Searching...    
+[ Results for search key : ^R$ ]
+[ Applications found : 1 ]
+
+dev-lang/R
+      Latest version available: 3.0.1
+      Latest version installed: 3.0.1
+      Size of files: 24,910 kB
+      Homepage:      http://www.r-project.org/
+      Description:   Language and environment for statistical computing and graphics
+      License:       || ( GPL-2 GPL-3 ) LGPL-2.1
+
+
+** ESS
+
+ emerge -s %^ess$
+Searching...    
+[ Results for search key : ^ess$ ]
+[ Applications found : 2 ]
+
+  app-emacs/ess
+      Latest version available: 13.09
+      Latest version installed: 13.09
+      Size of files: 3,278 kB
+      Homepage:      http://ess.r-project.org/
+      Description:   Emacs Speaks Statistics
+      License:       GPL-2+ GPL-3+ Texinfo-manual
+
+  app-xemacs/ess
+      Latest version available: 1.03
+      Latest version installed: [ Not Installed ]
+      Size of files: 459 kB
+      Homepage:      http://xemacs.org/
+      Description:   ESS: Emacs Speaks Statistics
+      License:       GPL-2
