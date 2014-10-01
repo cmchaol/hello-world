@@ -1,8 +1,0 @@
-
-
-* org for test
-
-* git
-
-** clone, edit, push
-
