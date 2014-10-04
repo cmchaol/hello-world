@@ -78,18 +78,22 @@ https://www.atlassian.com/git/tutorials/saving-changes/git-commit
 |      |                                                     |
 
 
-2
+step 2
 
 #+BEGIN_EXAMPLE
 
 git config user.email "you@example.com" 
+
 git config user.name "cmchaol"          
+
 git config push.default simple
+
 git config          credential.helper 'cache --timeout=3600'
 
 #+END_EXAMPLE
 
-3
+
+step 3
 
 git push 
 
