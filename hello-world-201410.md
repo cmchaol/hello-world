@@ -260,10 +260,119 @@ git commit
 
 <tr>
 <td class="right">2</td>
+<td class="left">setup the git config</td>
+</tr>
+
+
+<tr>
+<td class="right">&#xa0;</td>
+<td class="left">&#xa0;</td>
+</tr>
+
+
+<tr>
+<td class="right">&#xa0;</td>
+<td class="left">user.mail</td>
+</tr>
+
+
+<tr>
+<td class="right">&#xa0;</td>
+<td class="left">git config user.email "you@example.com"</td>
+</tr>
+
+
+<tr>
+<td class="right">&#xa0;</td>
+<td class="left">&#xa0;</td>
+</tr>
+
+
+<tr>
+<td class="right">&#xa0;</td>
+<td class="left">user.name</td>
+</tr>
+
+
+<tr>
+<td class="right">&#xa0;</td>
+<td class="left">git config user.name "cmchaol"</td>
+</tr>
+
+
+<tr>
+<td class="right">&#xa0;</td>
+<td class="left">&#xa0;</td>
+</tr>
+
+
+<tr>
+<td class="right">&#xa0;</td>
+<td class="left">push.default</td>
+</tr>
+
+
+<tr>
+<td class="right">&#xa0;</td>
+<td class="left">git config push.default simple</td>
+</tr>
+
+
+<tr>
+<td class="right">&#xa0;</td>
+<td class="left">&#xa0;</td>
+</tr>
+
+
+<tr>
+<td class="right">&#xa0;</td>
+<td class="left">caching password</td>
+</tr>
+
+
+<tr>
+<td class="right">&#xa0;</td>
+<td class="left">git config credential.helper 'cache &#x2013;timeout=3600'</td>
+</tr>
+
+
+<tr>
+<td class="right">&#xa0;</td>
+<td class="left">&#xa0;</td>
+</tr>
+
+
+<tr>
+<td class="right">&#xa0;</td>
+<td class="left">&#xa0;</td>
+</tr>
+
+
+<tr>
+<td class="right">3</td>
 <td class="left">git push</td>
+</tr>
+
+
+<tr>
+<td class="right">&#xa0;</td>
+<td class="left">&#xa0;</td>
 </tr>
 </tbody>
 </table>
+
+step 2
+
+    
+    git config user.email "you@example.com" 
+    
+    git config user.name "cmchaol"          
+    
+    git config push.default simple
+    
+    git config          credential.helper 'cache --timeout=3600'
+
+step 3
 
 git push 
 
@@ -310,6 +419,7 @@ git push
 </tbody>
 </table>
 
+    
     git add hello-world-201410.org
     
     git commit -m "<another modification of hello-world-201410.org>"
@@ -325,6 +435,8 @@ git push
     git config --global credential.helper  cache
     
     git config --global credential.helper 'cache --timeout=3600'
+    
+    git config          credential.helper 'cache --timeout=3600'
 
 # org mode
 
