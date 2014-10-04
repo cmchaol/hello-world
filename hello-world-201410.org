@@ -1,5 +1,83 @@
 #+OPTIONS: toc:2          
 
+* i3 (window manager)
+
+** definition
+
+| i3 |   |
+|    |   | 
+
+|          | a monitor                   |
+|----------+-----------------------------|
+| a screen | a monitor only has a screen |
+|          |                             |
+
+|             | a screen                             |
+|-------------+--------------------------------------|
+| workspace 1 |                                      |
+| workspace 2 | a screen presents only one workspace |
+| workspace 3 |                                      |
+
+
+|                       | i3                          |
+|-----------------------+-----------------------------|
+| a new terminal window |                             |
+| a container           |                             |
+| a tree                |                             |
+| a outputs             |                             |
+| a workspace           |                             |
+| a screen              | presents only one workspace |
+| a monitor             | contains only one screen    |
+|                       |                             |
+
+
+| general                         | i3                   |
+|                                 |                      |
+|---------------------------------+----------------------|
+| a terminal inside a window      | the basic uint in i3 |
+|                                 |                      |
+| a screen resides on a monitor   |                      |
+|                                 |                      |
+| a workspace resides on a screen |                      |
+|                                 |                      |
+
+** synonym
+
+|                     |           | reference |
+|---------------------+-----------+-----------|
+| i3wm                | official  |         1 |
+|                     |           |           |
+| i3 (window manager) | wikipedia |         2 |
+|                     |           |           |
+| i3-wm               |           |         3 |
+|                     |           |           |
+| i3                  |           |         4 |
+|                     |           |           |
+|                     |           |           |
+
+1
+
+http://i3wm.org/docs/userguide.html
+
+
+2
+
+http://en.wikipedia.org/wiki/I3_%28window_manager%29
+
+
+
+3
+
+https://www.archlinux.org/packages/community/x86_64/i3-wm/
+
+
+4
+
+https://wiki.archlinux.org/index.php/i3
+
+
+
+
 * my git experience
 
 ** repository download, edit, upload, by git
