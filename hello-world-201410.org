@@ -80,44 +80,76 @@ https://wiki.archlinux.org/index.php/i3
 
 * my git experience
 
-** repository download, edit, upload, by git
-
+** repository download, setup, edit, upload, by git
 
 *** summary
 
-| the repsitory | the git command |
-|---------------+-----------------|
-| download      | git clone       |
-|               |                 |
-| edit          | git add         |
-|               | git commit      |
-|               |                 |
-| upload        | git push        |
+| step | the repsitory | the git command |
+|------+---------------+-----------------|
+|    1 | download      | git clone       |
+|      |               |                 |
+|    2 | setup         | git config      |
+|      |               |                 |
+|    3 | edit          | git add         |
+|      |               | git commit      |
+|      |               |                 |
+|    4 | upload        | git push        |
 
 
 *** download THIS repository
 
-| step |                              | the command                                          |
-|------+------------------------------+------------------------------------------------------|
-|    1 | open a terminal              |                                                      |
-|      |                              |                                                      |
-|    2 | point inside the terminal    |                                                      |
-|      | move to the desire directory |                                                      |
-|      |                              |                                                      |
-|    3 | download the respostory      | git clone https://github.com/cmchaol/hello-world.git |
+#+BEGIN_EXAMPLE
+
+git clone https://github.com/cmchaol/hello-world.git
+
+#+END_EXAMPLE
+
+| step |                                  | the command                                          |
+|------+----------------------------------+------------------------------------------------------|
+|    1 | open a terminal                  |                                                      |
+|      |                                  |                                                      |
+|    2 | point inside the terminal        |                                                      |
+|      |                                  |                                                      |
+|    3 | move to the desire directory     |                                                      |
+|      |                                  |                                                      |
+|    4 | download the respostory          | git clone https://github.com/cmchaol/hello-world.git |
+
+
+*** setup the local respository
+
+#+BEGIN_EXAMPLE
+
+cd hello-world    
+
+git config user.email "cmchaol@users.noreply.github.com"
+
+git config user.name "cmchaol" 
+
+git config credential.helper 'cache --timeout=3600'
+
+#+END_EXAMPLE
+
+| step |                                  | the command                                              |
+|------+----------------------------------+----------------------------------------------------------|
+|    1 | move inside the local repository | cd hello-world                                           |
+|      |                                  |                                                          |
+|    2 | setup user.email                 | git config user.email "cmchaol@users.noreply.github.com" |
+|      |                                  |                                                          |
+|    3 | setup user.name                  | git config user.name "cmchaol"                           |
+|      |                                  |                                                          |
+|    4 | caching-your-github-password     | git config credential.helper 'cache --timeout=3600'      |
+|      |                                  |                                                          |
 
 
 *** edit the local repository, git add, git commit
 
 | step |                                  | the command               |
 |------+----------------------------------+---------------------------|
-|    1 | move inside the local repository | cd hello-world            |
+|    1 | edit the-specific-file           |                           |
 |      |                                  |                           |
-|    2 | edit the-specific-file           |                           |
+|    2 | git add the-specific-file        | git add the-specific-file |
 |      |                                  |                           |
-|    3 | git add the-specific-file        | git add the-specific-file |
-|      |                                  |                           |
-|    4 | commit the snapshot              | git commit -m "<message>" |
+|    3 | commit the snapshot              | git commit -m "<message>" |
 
 
 git add
@@ -202,9 +234,12 @@ git push
 
 ** Caching your GitHub password in Git
 
+By default, Git will cache your password for 15 minutes.
+
 https://help.github.com/articles/caching-your-github-password-in-git
 
 #+BEGIN_EXAMPLE
+
 git config          credential.helper  cache
 
 git config --global credential.helper  cache
@@ -212,6 +247,7 @@ git config --global credential.helper  cache
 git config --global credential.helper 'cache --timeout=3600'
 
 git config          credential.helper 'cache --timeout=3600'
+
 #+END_EXAMPLE
 
 
