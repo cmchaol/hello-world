@@ -127,6 +127,8 @@ git config user.name "cmchaol"
 
 git config credential.helper 'cache --timeout=3600'
 
+git config push.default simple 
+
 #+END_EXAMPLE
 
 | step |                                  | the command                                              |
@@ -139,6 +141,7 @@ git config credential.helper 'cache --timeout=3600'
 |      |                                  |                                                          |
 |    4 | caching-your-github-password     | git config credential.helper 'cache --timeout=3600'      |
 |      |                                  |                                                          |
+|    5 | push.default simple              | git config push.default simple                           |
 
 
 *** edit the local repository, git add, git commit
