@@ -79,6 +79,49 @@ https://wiki.archlinux.org/index.php/i3
 
 * my git experience
 
+** ssh git
+
+https://help.github.com/articles/generating-ssh-keys/
+
+ls -la ~/.ssh
+
+ssh-keygen -t rsa -C "cmchaol@users.noreply.github.com"
+
+upload to github 
+failed in firefox, gentoo, the click of the buttom "Add SSH key", which is the following link, has no function.
+
+https://github.com/settings/ssh#
+
+do it in windows.
+
+test it. 
+
+ssh -T git@github.com
+
+Changing a remote's URL
+
+https://help.github.com/articles/changing-a-remote-s-url/
+
+git remote -v
+
+git remote -v
+origin  https://github.com/USERNAME/REPOSITORY.git (fetch)
+origin  https://github.com/USERNAME/REPOSITORY.git (push)
+
+
+git remote -v
+origin  https://github.com/cmchaol/hello-world.git (fetch)
+origin  https://github.com/cmchaol/hello-world.git (push)
+
+git remote set-url origin git@github.com:USERNAME/REPOSITORY2.git
+
+git remote set-url origin git@github.com:cmchaol/hello-world.git
+
+git remote -v
+
+
+
+
 ** git rm
 
 
@@ -181,6 +224,7 @@ git config user.name "cmchaol"
 git config credential.helper 'cache --timeout=3600'
 
 git config push.default simple 
+
 
 
 
@@ -296,6 +340,59 @@ git config          credential.helper 'cache --timeout=3600'
 
 
 * org mode
+
+** column width in org and github 1
+
+| the command                                              | the comment                        | step |
+|                                                          |                                    |      |
+|                                                          |                                    |      |
+| cd hello-world                                           | # move inside the local repository |    1 |
+|                                                          |                                    |      |
+| git config push.default simple                           | # push.default simple              |      |
+|                                                          |                                    |      |
+| git config credential.helper 'cache --timeout=3600'      | # caching-your-github-password     |      |
+|                                                          |                                    |      |
+| git config user.email "cmchaol@users.noreply.github.com" | # setup user.email                 |      |
+|                                                          |                                    |      |
+| git config user.name "cmchaol"                           | # setup user.name                  |      |
+|                                                          |                                    |      |
+|                                                          |                                    |      |
+
+** column width in org and github 2
+
+| the command                                              | the comment                        |
+|                                                          |                                    |
+|                                                          |                                    |
+| cd hello-world                                           | # move inside the local repository |
+|                                                          |                                    |
+| git config push.default simple                           | # push.default simple              |
+|                                                          |                                    |
+| git config credential.helper 'cache --timeout=3600'      | # caching-your-github-password     |
+|                                                          |                                    |
+| git config user.email "cmchaol@users.noreply.github.com" | # setup user.email                 |
+|                                                          |                                    |
+| git config user.name "cmchaol"                           | # setup user.name                  |
+|                                                          |                                    |
+|                                                          |                                    |
+
+** column width in org and github 3
+
+| the command                                              |
+|                                                          |
+|                                                          |
+| cd hello-world                                           |
+|                                                          |
+| git config push.default simple                           |
+|                                                          |
+| git config credential.helper 'cache --timeout=3600'      |
+|                                                          |
+| git config user.email "cmchaol@users.noreply.github.com" |
+|                                                          |
+| git config user.name "cmchaol"                           |
+|                                                          |
+|                                                          |
+
+
 
 ** org export toc
 
