@@ -1,4 +1,3 @@
-#+OPTIONS: toc:2          
 
 * i3 (window manager)
 
@@ -333,6 +332,28 @@ For simplicity when using small examples, you can also start the example lines w
 #+END_EXAMPLE
 
 
+
+** org-drawers
+
+   keep information associated with an entry, but you normally don't want to see it. 
+
+|        |                   |           |
+| insert | org-insert-drawer | C-c C-x d |
+|        |                   |           |
+
+  
+http://orgmode.org/manual/Drawers.html#Drawers
+
+** org property
+   :PROPERTIES:
+   :EXPORT_FILE_NAME: org-property
+   :END:
+
+Properties are key-value pairs. 
+
+
+
+http://orgmode.org/manual/Property-syntax.html#Property-syntax
 
 * R
 
