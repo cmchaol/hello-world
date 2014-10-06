@@ -303,9 +303,8 @@ Inside the org file, type:
 : Some example from a text file.
 : #+END_EXAMPLE
 
-To insert the above code, type the 3 keystrokes together: < e TAB
+To insert the above code, type the 3 keystrokes together: '<' 'e' 'TAB'
 
-| <c>                        |
 | type 3 keystrokes together |
 |----------------------------|
 | <                          |
