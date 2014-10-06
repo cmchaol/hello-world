@@ -155,6 +155,22 @@ git config push.default simple
 |                                                          |                                    |      |
 
 
+| the command                                              | the comment                        |
+|                                                          |                                    |
+|                                                          |                                    |
+| cd hello-world                                           | # move inside the local repository |
+|                                                          |                                    |
+| git config push.default simple                           | # push.default simple              |
+|                                                          |                                    |
+| git config credential.helper 'cache --timeout=3600'      | # caching-your-github-password     |
+|                                                          |                                    |
+| git config user.email "cmchaol@users.noreply.github.com" | # setup user.email                 |
+|                                                          |                                    |
+| git config user.name "cmchaol"                           | # setup user.name                  |
+|                                                          |                                    |
+|                                                          |                                    |
+
+
 
 cd hello-world    
 
