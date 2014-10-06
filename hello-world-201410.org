@@ -80,6 +80,15 @@ https://wiki.archlinux.org/index.php/i3
 
 * my git experience
 
+** git rm
+
+
+|                           | the command               |
+|---------------------------+---------------------------|
+| git rm the-specific-file  | git rm the-specific-file  |
+
+
+
 ** repository download, setup, edit, upload, by git
 
 *** summary
