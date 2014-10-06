@@ -298,6 +298,8 @@ c-h v org-export-backends
 
 http://orgmode.org/manual/Literal-examples.html#Literal-examples
 
+: Inside the org file, type:
+:
 : #+BEGIN_EXAMPLE
 : Some example from a text file.
 : #+END_EXAMPLE
