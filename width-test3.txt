@@ -1,0 +1,18 @@
+		   __________________________________
+
+		    COLUMN WIDTH IN ORG AND GITHUB 3
+		   __________________________________
+
+
+ the command                                              
+                                                          
+                                                          
+ cd hello-world                                           
+                                                          
+ git config push.default simple                           
+                                                          
+ git config credential.helper 'cache --timeout=3600'      
+                                                          
+ git config user.email "cmchaol@users.noreply.github.com" 
+                                                          
+ git config user.name "cmchaol"                           
