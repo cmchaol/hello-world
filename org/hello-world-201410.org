@@ -1,85 +1,115 @@
 
-* i3 (window manager)
-
-** definition
-
-| i3 |   |
-|    |   | 
-
-|          | a monitor                   |
-|----------+-----------------------------|
-| a screen | a monitor only has a screen |
-|          |                             |
-
-|             | a screen                             |
-|-------------+--------------------------------------|
-| workspace 1 |                                      |
-| workspace 2 | a screen presents only one workspace |
-| workspace 3 |                                      |
-
-
-|                       | i3                          |
-|-----------------------+-----------------------------|
-| a new terminal window |                             |
-| a container           |                             |
-| a tree                |                             |
-| a outputs             |                             |
-| a workspace           |                             |
-| a screen              | presents only one workspace |
-| a monitor             | contains only one screen    |
-|                       |                             |
-
-
-| general                         | i3                   |
-|                                 |                      |
-|---------------------------------+----------------------|
-| a terminal inside a window      | the basic uint in i3 |
-|                                 |                      |
-| a screen resides on a monitor   |                      |
-|                                 |                      |
-| a workspace resides on a screen |                      |
-|                                 |                      |
-
-** synonym
-
-|                     |           | reference |
-|---------------------+-----------+-----------|
-| i3wm                | official  |         1 |
-|                     |           |           |
-| i3 (window manager) | wikipedia |         2 |
-|                     |           |           |
-| i3-wm               |           |         3 |
-|                     |           |           |
-| i3                  |           |         4 |
-|                     |           |           |
-|                     |           |           |
-
-1
-
-http://i3wm.org/docs/userguide.html
-
-
-2
-
-http://en.wikipedia.org/wiki/I3_%28window_manager%29
-
-
-
-3
-
-https://www.archlinux.org/packages/community/x86_64/i3-wm/
-
-
-4
-
-https://wiki.archlinux.org/index.php/i3
 
 
 
 
 * my git experience
 
-** ssh git
+** ssh github
+
+*** facts
+
+http://git-scm.com/book/en/Git-on-the-Server-The-Protocols
+
+Probably the most common transport protocol for Git is SSH. 
+
+SSH is also the only network-based protocol that you can easily read from and write to. 
+
+
+*** clone ssh github
+
+http://git-scm.com/book/en/Git-on-the-Server-The-Protocols
+
+
+To clone a Git repository over SSH, you can specify ssh:// URL like this:
+
+$ git clone ssh://user@server/project.git
+
+Or you can use the shorter scp-like syntax for SSH protocol:
+
+$ git clone user@server:project.git
+
+
+git clone ssh://user@server/project.git
+
+git clone user@server:project.git
+
+#+BEGIN_QUOTE
+
+http://git-scm.com/book/en/Git-on-the-Server-The-Protocols
+
+
+Everything should be made as simple as possible,
+but not any simpler -- Albert Einstein
+#+END_QUOTE
+
+
+
+for hello-world
+
+| git clone ssh://cmchaol@github.com/hello-world.git     | failed  |
+| git clone ssh://git@github.com/cmchaol/hello-world.git | succeed |
+| git clone git@github.com:cmchaol/hello-world.git       | succeed |
+
+git clone ssh://cmchaol@github.com/hello-world.git
+
+Cloning into 'hello-world'...
+
+Permission denied (publickey).
+
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights and the repository exists.
+
+
+
+git clone ssh://git@github.com/cmchaol/hello-world.git
+
+git clone git@github.com:cmchaol/hello-world.git
+
+
+#+BEGIN_EXAMPLE
+
+| git clone ssh:// cmchaol @github.com          /hello-world.git | failed  |
+| git clone ssh:// git     @github.com /cmchaol /hello-world.git | succeed |
+|                                                                |         |
+| git clone        git     @github.com :cmchaol /hello-world.git | succeed |
+
+#+END_EXAMPLE
+
+
+|   |              <r> |
+| 1 |        git clone |
+| 2 |           ssh:// |
+|   |                  |
+|   |                  |
+| 3 |          cmchaol |
+| 4 |         :cmchaol |
+| 5 |         /cmchaol |
+|   |                  |
+| 6 |              git |
+| 7 |      @github.com |
+| 8 | /hello-world.git |
+
+| git clone | ssh:// | cmchaol | @github.com |          | /hello-world.git | # | failed  |
+| git clone | ssh:// | git     | @github.com | /cmchaol | /hello-world.git | # | succeed |
+| git clone |        | git     | @github.com | :cmchaol | /hello-world.git | # | succeed |
+
+
+*** ssh keys
+
+location
+
+~/.ssh
+
+files
+
+either id_rsa.pub or id_dsa.pub
+
+either 
+
+id_rsa.pub
+id_dsa.pub
 
 
 
@@ -164,15 +194,17 @@ git clone https://github.com/cmchaol/hello-world.git
 
 #+END_EXAMPLE
 
-| step |                                  | the command                                          |
-|------+----------------------------------+------------------------------------------------------|
-|    1 | open a terminal                  |                                                      |
-|      |                                  |                                                      |
-|    2 | point inside the terminal        |                                                      |
-|      |                                  |                                                      |
-|    3 | move to the desire directory     |                                                      |
-|      |                                  |                                                      |
-|    4 | download the respostory          | git clone https://github.com/cmchaol/hello-world.git |
+| step |                              | the command                                          |
+|------+------------------------------+------------------------------------------------------|
+|    1 | open a terminal              |                                                      |
+|      |                              |                                                      |
+|    2 | point inside the terminal    |                                                      |
+|      |                              |                                                      |
+|    3 | move to the desire directory |                                                      |
+|      |                              |                                                      |
+|    4 | download the respostory      | git clone https://github.com/cmchaol/hello-world.git |
+|      |                              |                                                      |
+| <c>  |  <r>                         |                                                      |
 
 
 *** setup the local respository
@@ -502,6 +534,7 @@ Properties are key-value pairs.
 
 http://orgmode.org/manual/Property-syntax.html#Property-syntax
 
+
 * R
 
 ** installation in gentoo
@@ -555,4 +588,78 @@ dev-lang/R
       Homepage:      http://xemacs.org/
       Description:   ESS: Emacs Speaks Statistics
       License:       GPL-2
+* i3 (window manager)
+
+** definition
+
+| i3 |   |
+|    |   | 
+
+|          | a monitor                   |
+|----------+-----------------------------|
+| a screen | a monitor only has a screen |
+|          |                             |
+
+|             | a screen                             |
+|-------------+--------------------------------------|
+| workspace 1 |                                      |
+| workspace 2 | a screen presents only one workspace |
+| workspace 3 |                                      |
+
+
+|                       | i3                          |
+|-----------------------+-----------------------------|
+| a new terminal window |                             |
+| a container           |                             |
+| a tree                |                             |
+| a outputs             |                             |
+| a workspace           |                             |
+| a screen              | presents only one workspace |
+| a monitor             | contains only one screen    |
+|                       |                             |
+
+
+| general                         | i3                   |
+|                                 |                      |
+|---------------------------------+----------------------|
+| a terminal inside a window      | the basic uint in i3 |
+|                                 |                      |
+| a screen resides on a monitor   |                      |
+|                                 |                      |
+| a workspace resides on a screen |                      |
+|                                 |                      |
+
+** synonym
+
+|                     |           | reference |
+|---------------------+-----------+-----------|
+| i3wm                | official  |         1 |
+|                     |           |           |
+| i3 (window manager) | wikipedia |         2 |
+|                     |           |           |
+| i3-wm               |           |         3 |
+|                     |           |           |
+| i3                  |           |         4 |
+|                     |           |           |
+|                     |           |           |
+
+1
+
+http://i3wm.org/docs/userguide.html
+
+
+2
+
+http://en.wikipedia.org/wiki/I3_%28window_manager%29
+
+
+
+3
+
+https://www.archlinux.org/packages/community/x86_64/i3-wm/
+
+
+4
+
+https://wiki.archlinux.org/index.php/i3
 
