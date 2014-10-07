@@ -12,6 +12,10 @@ git clone ssh://user@server/project.git
 
 git clone user@server:project.git
 
+> 
+> 
+> <http://git-scm.com/book/en/Git-on-the-Server-The-Protocols>
+> 
 > Everything should be made as simple as possible,
 > but not any simpler &#x2013; Albert Einstein
 
@@ -46,8 +50,11 @@ for hello-world
 </table>
 
 git clone ssh://cmchaol@github.com/hello-world.git
+
 Cloning into 'hello-world'&#x2026;
+
 Permission denied (publickey).
+
 fatal: Could not read from remote repository.
 
 Please make sure you have the correct access rights
