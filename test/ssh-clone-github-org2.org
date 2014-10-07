@@ -1,0 +1,64 @@
+[[http://git-scm.com/book/en/Git-on-the-Server-The-Protocols]]
+
+
+To clone a Git repository over SSH, you can specify ssh:// URL like this:
+
+$ git clone ssh://user@server/project.git
+
+Or you can use the shorter scp-like syntax for SSH protocol:
+
+$ git clone user@server:project.git
+
+
+git clone ssh://user@server/project.git
+
+git clone user@server:project.git
+
+#+BEGIN_QUOTE
+
+
+[[http://git-scm.com/book/en/Git-on-the-Server-The-Protocols]]
+
+
+Everything should be made as simple as possible,
+but not any simpler -- Albert Einstein
+#+END_QUOTE
+
+
+
+for hello-world
+
+| git clone ssh://cmchaol@github.com/hello-world.git     | failed  |
+| git clone ssh://git@github.com/cmchaol/hello-world.git | succeed |
+| git clone git@github.com:cmchaol/hello-world.git       | succeed |
+
+git clone ssh://cmchaol@github.com/hello-world.git
+
+Cloning into 'hello-world'...
+
+Permission denied (publickey).
+
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights and the repository exists.
+
+
+
+git clone ssh://git@github.com/cmchaol/hello-world.git
+
+git clone git@github.com:cmchaol/hello-world.git
+
+
+#+BEGIN_EXAMPLE
+
+| git clone ssh:// cmchaol @github.com          /hello-world.git | failed  |
+| git clone ssh:// git     @github.com /cmchaol /hello-world.git | succeed |
+|                                                                |         |
+| git clone        git     @github.com :cmchaol /hello-world.git | succeed |
+
+#+END_EXAMPLE
+
+
+| git clone | ssh:// | cmchaol | @github.com |          | /hello-world.git | # | failed  |
+| git clone | ssh:// | git     | @github.com | /cmchaol | /hello-world.git | # | succeed |
+| git clone |        | git     | @github.com | :cmchaol | /hello-world.git | # | succeed |
