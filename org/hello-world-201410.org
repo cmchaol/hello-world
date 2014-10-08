@@ -5,6 +5,64 @@
 
 * my git experience
 
+** ssh clone github inside emacs
+
+| the command                                              |   | step |                                  |
+|----------------------------------------------------------+---+------+----------------------------------|
+|                                                          | # |    1 | get inside emacs                 |
+|                                                          | # |    2 | enter eshell M-x eshell          |
+|                                                          | # |    3 | move to the right directory      |
+| git clone git@github.com:cmchaol/hello-world.git         | # |    4 | ssh clone this repository        |
+| cd hello-world                                           | # |    5 | move inside the local repository |
+| git config user.email "cmchaol@users.noreply.github.com" | # |    6 | configure user.email             |
+| git config user.name "cmchaol"                           | # |    7 | configure user.name              |
+
+** ssh clone github inside emacs narrower
+
+
+|                                                          | step |
+|----------------------------------------------------------+------|
+| # get inside emacs                                       |    1 |
+|                                                          |      |
+|                                                          |      |
+| # enter eshell M-x eshell                                |    2 |
+|                                                          |      |
+|                                                          |      |
+| # move to the right directory                            |    3 |
+|                                                          |      |
+|                                                          |      |
+| # ssh clone this repository                              |    4 |
+| git clone git@github.com:cmchaol/hello-world.git         |      |
+|                                                          |      |
+|                                                          |      |
+| # move inside the local repository                       |    5 |
+| cd hello-world                                           |      |
+|                                                          |      |
+|                                                          |      |
+| # configure user.email                                   |    6 |
+| git config user.email "cmchaol@users.noreply.github.com" |      |
+|                                                          |      |
+|                                                          |      |
+| # configure user.name                                    |    7 |
+| git config user.name "cmchaol"                           |      |
+
+
+
+** ssh clone github inside emacs in export-example
+#+BEGIN_EXAMPLE
+
+| the command                                              |   | step |                                  |
+|----------------------------------------------------------+---+------+----------------------------------|
+|                                                          | # |    1 | get inside emacs                 |
+|                                                          | # |    2 | enter eshell M-x eshell          |
+|                                                          | # |    3 | move to the right directory      |
+| git clone git@github.com:cmchaol/hello-world.git         | # |    4 | ssh clone this repository        |
+| cd hello-world                                           | # |    5 | move inside the local repository |
+| git config user.email "cmchaol@users.noreply.github.com" | # |    6 | configure user.email             |
+| git config user.name "cmchaol"                           | # |    7 | configure user.name              |
+
+#+END_EXAMPLE
+
 ** ssh github
 
 *** facts
