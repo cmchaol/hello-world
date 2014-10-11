@@ -23,9 +23,9 @@
 
 | # get inside emacs                                       |
 |                                                          |
-| # enter eshell M-x eshell                                |
+| # create an eshell with the command 'M-x eshell'         |
 |                                                          |
-| # move to the right directory                            |
+| # get inside the eshell and move to the right directory  |
 |                                                          |
 |                                                          |
 | # ssh clone this repository                              |
