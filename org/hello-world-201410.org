@@ -1,6 +1,65 @@
 
 
 
+* literate programming
+
+** babel
+
+*** Babel: Introduction
+
+http://orgmode.org/worg/org-contrib/babel/intro.html
+
+#+BEGIN_SRC 
+
+#+END_SRC
+
+#+begin_src sh
+  echo "This file takes up `du -h org-babel.org |sed 's/\([0-9k]*\)[ ]*org-babel.org/\1/'`"
+#+end_src
+
+#+RESULTS:
+: This file takes up
+
+
+#+BEGIN_SRC sh
+
+pwd
+
+#+END_SRC
+
+#+RESULTS:
+: /home/c5766/c5766tmpfs/hello-world/org
+
+** important reference
+
+A Multi-Language Computing Environment for Literate Programming and Reproducible Research
+
+http://www.jstatsoft.org/v46/i03
+
+
+
+Babel: Introduction
+
+http://orgmode.org/worg/org-contrib/babel/intro.html
+
+
+literate
+
+https://www.ahdictionary.com/word/search.html?q=literate
+
+http://dictionary.cambridge.org/dictionary/british/literate
+
+Tools
+
+http://en.wikipedia.org/wiki/Literate_programming
+
+* emacs spell check
+
+M-x flyspell-mode
+    Enable Flyspell mode, which highlights all misspelled words. 
+
+https://www.gnu.org/software/emacs/manual/html_node/emacs/Spelling.html
+
 
 
 * my git experience
@@ -438,6 +497,11 @@ git config          credential.helper 'cache --timeout=3600'
 
 * org mode
 
+
+** markdown
+
+
+
 ** column width in org and github 1
 
 | the command                                              | the comment                        | step |
@@ -534,8 +598,13 @@ http://en.wikipedia.org/wiki/Org-mode
 
 ** org export backends
 
-c-h v org-export-backends
-
+| 2 ways to modify               |
+|--------------------------------|
+| C-h v org-export-backends      |
+| customize                      |
+|--------------------------------|
+| M-x customize-group org-export |
+| Org Export Backends            |
 
 ** org export Literal examples
 
@@ -550,11 +619,17 @@ To insert the above code, type the 3 keystrokes together: '<' 'e' 'TAB'
 
 http://orgmode.org/manual/Easy-Templates.html#Easy-Templates
 
-| type 3 keystrokes together |
-|----------------------------|
-| <                          |
-| e                          |
-| TAB                        |
+#+BEGIN_CENTER 
+
+| type the 3 |
+| keystrokes |
+| together   |
+|------------|
+| <          |
+| e          |
+| TAB        |
+
+#+END_CENTER
 
 
 For simplicity when using small examples, you can also start the example lines with a colon followed by a space. There may also be additional whitespace before the colon:
@@ -565,6 +640,25 @@ For simplicity when using small examples, you can also start the example lines w
      Here is an example
         : Some example from a text file.
 #+END_EXAMPLE
+
+
+** 15.2 Easy Templates
+
+http://orgmode.org/manual/Easy-Templates.html#Easy-Templates
+
+s 	#+BEGIN_SRC ... #+END_SRC
+e 	#+BEGIN_EXAMPLE ... #+END_EXAMPLE
+q 	#+BEGIN_QUOTE ... #+END_QUOTE
+v 	#+BEGIN_VERSE ... #+END_VERSE
+c 	#+BEGIN_CENTER ... #+END_CENTER
+l 	#+BEGIN_LaTeX ... #+END_LaTeX
+L 	#+LaTeX:
+h 	#+BEGIN_HTML ... #+END_HTML
+H 	#+HTML:
+a 	#+BEGIN_ASCII ... #+END_ASCII
+A 	#+ASCII:
+i 	#+INDEX: line
+I 	#+INCLUDE: line 
 
 
 
