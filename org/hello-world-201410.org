@@ -1,11 +1,74 @@
 
+* tasks
+
+** 15 minutes tasks
 
 
-* literate programming
 
-** babel
+** DONE todo test
 
-*** Babel: Introduction
+| 3 state   |                        |
+|-----------+------------------------|
+| none      |                        |
+| TODO      |                        |
+| DONE      |                        |
+|-----------+------------------------|
+| C-c C-t   | cursor inside the tree |
+| org-todo  |                        |
+|           |                        |
+| S-<right> | cursor on the headline |
+| S-<left>  |                        |
+
+http://orgmode.org/manual/TODO-basics.html#TODO-basics
+
+
+
+** DONE emacs spell check
+
+M-x flyspell-mode
+    Enable Flyspell mode, which highlights all misspelled words. 
+
+https://www.gnu.org/software/emacs/manual/html_node/emacs/Spelling.html
+
+
+** DONE 8.4 Clocking work time
+   CLOCK: [2014-10-12 Sun 13:44]--[2014-10-12 Sun 13:46] =>  0:02
+   CLOCK: [2014-10-12 Sun 13:40]--[2014-10-12 Sun 13:41] =>  0:01
+
+| the clock    |               |
+|--------------+---------------|
+| start        | stop          |
+| clock in     | clock out     |
+|--------------+---------------|
+| C-c C-x C-i  | C-c C-x C-o   |
+| org-clock-in | org-clock-out |
+
+
+http://orgmode.org/manual/Clocking-work-time.html#Clocking-work-time
+
+
+
+
+* projects
+  
+
+
+** GTD orgmode
+
+*** important reference
+
+How I use Emacs and Org-mode to implement GTD 
+
+http://members.optusnet.com.au/~charles57/GTD/gtd_workflow.html
+
+
+
+
+** literate programming
+
+*** babel
+
+**** Babel: Introduction
 
 http://orgmode.org/worg/org-contrib/babel/intro.html
 
@@ -30,7 +93,8 @@ pwd
 #+RESULTS:
 : /home/c5766/c5766tmpfs/hello-world/org
 
-** important reference
+
+**** important reference
 
 A Multi-Language Computing Environment for Literate Programming and Reproducible Research
 
@@ -53,18 +117,11 @@ Tools
 
 http://en.wikipedia.org/wiki/Literate_programming
 
-* emacs spell check
-
-M-x flyspell-mode
-    Enable Flyspell mode, which highlights all misspelled words. 
-
-https://www.gnu.org/software/emacs/manual/html_node/emacs/Spelling.html
 
 
+** my git experience
 
-* my git experience
-
-** ssh clone github inside emacs
+*** ssh clone github inside emacs
 
 | the command                                              |   | step |                                  |
 |----------------------------------------------------------+---+------+----------------------------------|
@@ -77,7 +134,7 @@ https://www.gnu.org/software/emacs/manual/html_node/emacs/Spelling.html
 | git config user.name "cmchaol"                           | # |    7 | configure user.name              |
 
 
-** ssh clone github inside emacs
+*** ssh clone github inside emacs
 
 
 | # get inside emacs                                       |
@@ -105,7 +162,7 @@ https://www.gnu.org/software/emacs/manual/html_node/emacs/Spelling.html
 
 
 
-** ssh clone github inside emacs in export-example
+*** ssh clone github inside emacs in export-example
 #+BEGIN_EXAMPLE
 
 | the command                                              |   | step |                                  |
@@ -120,9 +177,9 @@ https://www.gnu.org/software/emacs/manual/html_node/emacs/Spelling.html
 
 #+END_EXAMPLE
 
-** ssh github
+*** ssh github
 
-*** facts
+**** facts
 
 http://git-scm.com/book/en/Git-on-the-Server-The-Protocols
 
@@ -131,7 +188,7 @@ Probably the most common transport protocol for Git is SSH.
 SSH is also the only network-based protocol that you can easily read from and write to. 
 
 
-*** clone ssh github
+**** clone ssh github
 
 http://git-scm.com/book/en/Git-on-the-Server-The-Protocols
 
@@ -211,7 +268,7 @@ git clone git@github.com:cmchaol/hello-world.git
 | git clone |        | git     | @github.com | :cmchaol | /hello-world.git | # | succeed |
 
 
-*** ssh keys
+**** ssh keys
 
 location
 
@@ -228,11 +285,11 @@ id_dsa.pub
 
 
 
-*** github ssh clone
+**** github ssh clone
 
 git clone git@github.com:cmchaol/hello-world.git
 
-*** temp
+**** temp
 
 
 https://help.github.com/articles/generating-ssh-keys/
@@ -276,7 +333,7 @@ git remote -v
 
 
 
-** git rm
+*** git rm
 
 
 |                           | the command               |
@@ -285,9 +342,9 @@ git remote -v
 
 
 
-** repository download, setup, edit, upload, by git
+*** repository download, setup, edit, upload, by git
 
-*** summary
+**** summary
 
 | step | the repsitory | the git command |
 |------+---------------+-----------------|
@@ -301,7 +358,7 @@ git remote -v
 |    4 | upload        | git push        |
 
 
-*** download THIS repository
+**** download THIS repository
 
 #+BEGIN_EXAMPLE
 
@@ -322,7 +379,7 @@ git clone https://github.com/cmchaol/hello-world.git
 | <c>  |  <r>                         |                                                      |
 
 
-*** setup the local respository
+**** setup the local respository
 
 #+BEGIN_EXAMPLE
 
@@ -384,7 +441,7 @@ git config push.default simple
 
 
 
-*** edit the local repository, git add, git commit
+**** edit the local repository, git add, git commit
 
 | step |                                  | the command               |
 |------+----------------------------------+---------------------------|
@@ -406,7 +463,7 @@ https://www.atlassian.com/git/tutorials/saving-changes/git-commit
 
 
 
-*** upload the local snapshot to the remote github repository
+**** upload the local snapshot to the remote github repository
 
 | step |                                                     |
 |------+-----------------------------------------------------|
@@ -453,7 +510,7 @@ git push
 https://www.atlassian.com/git/tutorials/syncing/git-push
 
 
-*** a typical script
+**** a typical script
 
 | A practicle cycle |
 |-------------------|
@@ -475,7 +532,7 @@ git push
 
 
 
-** Caching your GitHub password in Git
+*** Caching your GitHub password in Git
 
 By default, Git will cache your password for 15 minutes.
 
@@ -495,14 +552,15 @@ git config          credential.helper 'cache --timeout=3600'
 
 
 
-* org mode
+
+** org mode
 
 
-** markdown
+*** markdown
 
 
 
-** column width in org and github 1
+*** column width in org and github 1
 
 | the command                                              | the comment                        | step |
 |                                                          |                                    |      |
@@ -519,7 +577,7 @@ git config          credential.helper 'cache --timeout=3600'
 |                                                          |                                    |      |
 |                                                          |                                    |      |
 
-** column width in org and github 2
+*** column width in org and github 2
 
 | the command                                              | the comment                        |
 |                                                          |                                    |
@@ -536,7 +594,7 @@ git config          credential.helper 'cache --timeout=3600'
 |                                                          |                                    |
 |                                                          |                                    |
 
-** column width in org and github 3
+*** column width in org and github 3
 
 | the command                                              |
 |                                                          |
@@ -555,7 +613,7 @@ git config          credential.helper 'cache --timeout=3600'
 
 
 
-** org export toc
+*** org export toc
 
    #+OPTIONS: toc:2          (only to two levels in TOC)
    #+OPTIONS: toc:nil        (no default TOC at all)
@@ -564,7 +622,7 @@ git config          credential.helper 'cache --timeout=3600'
    #+OPTIONS: toc:2          (only to two levels in TOC)
 #+OPTIONS: toc:nil        (no default TOC at all)
 
-** synonym
+*** synonym
 
 |          | reference |
 |----------+-----------|
@@ -596,7 +654,7 @@ http://orgmode.org/manual/Summary.html#Summary
 http://en.wikipedia.org/wiki/Org-mode
 
 
-** org export backends
+*** org export backends
 
 | 2 ways to modify               |
 |--------------------------------|
@@ -606,7 +664,7 @@ http://en.wikipedia.org/wiki/Org-mode
 | M-x customize-group org-export |
 | Org Export Backends            |
 
-** org export Literal examples
+*** org export Literal examples
 
 http://orgmode.org/manual/Literal-examples.html#Literal-examples
 
@@ -642,7 +700,7 @@ For simplicity when using small examples, you can also start the example lines w
 #+END_EXAMPLE
 
 
-** 15.2 Easy Templates
+*** 15.2 Easy Templates
 
 http://orgmode.org/manual/Easy-Templates.html#Easy-Templates
 
@@ -662,7 +720,7 @@ I 	#+INCLUDE: line
 
 
 
-** org-drawers
+*** org-drawers
 
    keep information associated with an entry, but you normally don't want to see it. 
 
@@ -673,7 +731,7 @@ I 	#+INCLUDE: line
   
 http://orgmode.org/manual/Drawers.html#Drawers
 
-** org property
+*** org property
    :PROPERTIES:
    :EXPORT_FILE_NAME: org-property
    :END:
@@ -685,9 +743,10 @@ Properties are key-value pairs.
 http://orgmode.org/manual/Property-syntax.html#Property-syntax
 
 
-* R
 
-** installation in gentoo
+** R
+
+*** installation in gentoo
 
 emerge -s %^R$ 
 
@@ -716,7 +775,7 @@ dev-lang/R
       License:       || ( GPL-2 GPL-3 ) LGPL-2.1
 
 
-** ESS
+*** ESS
 
  emerge -s %^ess$
 
@@ -738,9 +797,11 @@ dev-lang/R
       Homepage:      http://xemacs.org/
       Description:   ESS: Emacs Speaks Statistics
       License:       GPL-2
-* i3 (window manager)
 
-** definition
+
+** i3 (window manager)
+
+*** definition
 
 | i3 |   |
 |    |   | 
@@ -779,7 +840,7 @@ dev-lang/R
 | a workspace resides on a screen |                      |
 |                                 |                      |
 
-** synonym
+*** synonym
 
 |                     |           | reference |
 |---------------------+-----------+-----------|
@@ -812,4 +873,22 @@ https://www.archlinux.org/packages/community/x86_64/i3-wm/
 4
 
 https://wiki.archlinux.org/index.php/i3
+
+
+** The top level headline
+
+*** space
+
+tasks
+projects
+q
+
+
+
+*** scheme
+
+| tasks    |
+| projects |
+|          |
+
 
