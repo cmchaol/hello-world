@@ -3,6 +3,37 @@
 
 ** 15 minutes tasks
 
+*** ssh clone git inside emacs through babel
+
+| git clone    |
+|--------------|
+| clone https  |
+| ssh          |
+| emacs eshell |
+| org babel    |
+|              |
+
+- clone
+
+git clone https://github.com/cmchaol/hello-world.git 
+
+
+- ssh
+
+git clone git@github.com:cmchaol/hello-world.git  
+
+
+- emacs eshell mode: get inside emacs eshell by M-x eshell
+
+git clone git@github.com:cmchaol/hello-world.git  
+
+
+- orgmode babel: inside org file and execute by C-c C-c
+
+
+
+
+
 
 
 ** DONE todo test
