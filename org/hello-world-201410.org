@@ -934,4 +934,4 @@ q
 
 ** gif animation
 
-[[File_Animexample.gif]]
+[[Animexample.gif]]
